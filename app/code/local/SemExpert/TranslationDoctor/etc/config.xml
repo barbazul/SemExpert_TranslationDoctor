@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <SemExpert_TranslationDoctor>
+            <version>0.1.0</version>
+        </SemExpert_TranslationDoctor>
+    </modules>
+    <global>
+        <models>
+            <core>
+                <rewrite>
+                    <translate>SemExpert_TranslationDoctor_Model_Mage_Core_Translate</translate>
+                </rewrite>
+            </core>
+        </models>
+    </global>
+</config>
