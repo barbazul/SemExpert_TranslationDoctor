@@ -6,12 +6,42 @@
         </SemExpert_TranslationDoctor>
     </modules>
     <global>
+        
         <models>
+            
             <core>
                 <rewrite>
                     <translate>SemExpert_TranslationDoctor_Model_Mage_Core_Translate</translate>
                 </rewrite>
             </core>
+            
+            <translationdoctor>
+                <class>SemExpert_TranslationDoctor_Model</class>
+                <resourceModel>tranlsationdoctor_resource</resourceModel>
+            </translationdoctor>
+            
+            <tranlsationdoctor_resource>
+                <class>SemExpert_TranslationDoctor_Model_Resource</class>
+                
+                <entities>
+                    <missing>
+                        <table>translationdoctor_missing</table>
+                    </missing>
+                </entities>
+                
+            </tranlsationdoctor_resource>
+            
         </models>
+        
+        <resources>
+            
+            <translationdoctor_setup>
+                <setup>
+                    <module>SemExpert_TranslationDoctor</module>
+                </setup>
+            </translationdoctor_setup>
+            
+        </resources>
+        
     </global>
 </config>
