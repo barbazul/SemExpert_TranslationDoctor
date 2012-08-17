@@ -1,0 +1,10 @@
+h1. SemExpert_TranslationDoctor
+
+This tool is for keeping translation files in good health.
+
+h2. Roadmap:
+
+# -Monitor translation requests and log any missing translations found- *DONE*
+# Review logs and translate right away as a simple TO-DO list
+# Export compiled translation files
+# Run a system-wide diagnostic to detect unused translations
