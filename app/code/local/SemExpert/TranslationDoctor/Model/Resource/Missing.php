@@ -32,7 +32,7 @@ class SemExpert_TranslationDoctor_Model_Resource_Missing extends Mage_Core_Model
         $adapter = $this->_getWriteAdapter();
         
         $query = "
-            INSERT LOW_PRIORITY IGNORE INTO `{$adapter->getTableName('translationdoctor_missing')}`
+            INSERT DELAYED IGNORE INTO `{$adapter->getTableName('translationdoctor_missing')}`
             SET 
                 {$adapter->quoteInto('`locale` = ?', $translate->getLocale())},
                 {$adapter->quoteInto('`namespace` = ?', $namespace)},

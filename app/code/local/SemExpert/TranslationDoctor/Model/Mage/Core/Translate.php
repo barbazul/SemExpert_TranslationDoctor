@@ -4,11 +4,12 @@ class SemExpert_TranslationDoctor_Model_Mage_Core_Translate extends Mage_Core_Mo
 {
     protected function _getTranslatedString($text, $code)
     {
+        $is_active = Mage::getStoreConfig('dev/translate_doctor/active');
         Varien_Profiler::start('SemExpert_TranslationDoctor::missing_translation');
-        if (!array_key_exists($code, $this->getData()) && !array_key_exists($text, $this->getData())) 
+        if ($is_active && !array_key_exists($code, $this->getData()) && !array_key_exists($text, $this->getData())) 
         {
             Mage::getModel('translationdoctor/missing')->register($code);
-            Mage::log('Missing translation {' . $text . ',' . $code . '}', Zend_Log::DEBUG, 'translations.log');
+            //Mage::log('Missing translation {' . $text . ',' . $code . '}', Zend_Log::DEBUG, 'translations.log', FALSE);
             
         }
         

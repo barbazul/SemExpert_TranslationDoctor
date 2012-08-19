@@ -4,7 +4,7 @@
         <dev translate="label" module="core">
             <groups>
                 <translate_doctor translate="label">
-                    <label>Translate Doctor</label>
+                    <label>Translation Doctor</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>35</sort_order>
                     <show_in_default>1</show_in_default>
