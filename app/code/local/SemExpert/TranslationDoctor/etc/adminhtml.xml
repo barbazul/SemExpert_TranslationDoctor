@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <system>
+            <children>
+                <translationdr translate="title" module="catalog">
+                    <title>Translation Doctor</title>
+                    <action>translationdr/missing/</action>
+                    <sort_order>0</sort_order>
+                </translationdr>
+            </children>
+        </system>
+    </menu>
+</config>

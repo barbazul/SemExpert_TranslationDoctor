@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<layout>
+    <semexpert_translationdr_missing_index>
+        <reference name="content">
+            <block type="translationdr/adminhtml_missing" name="missing_list" />
+        </reference>
+    </semexpert_translationdr_missing_index>
+</layout>

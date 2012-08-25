@@ -5,7 +5,14 @@
             <version>0.1.0</version>
         </SemExpert_TranslationDoctor>
     </modules>
+
     <global>
+
+        <blocks>
+            <translationdr>
+                <class>SemExpert_TranslationDoctor_Block</class>
+            </translationdr>
+        </blocks>
         
         <models>
             
@@ -44,4 +51,29 @@
         </resources>
         
     </global>
+    
+    <admin>
+        <routers>
+            <semexpert_translationdr>
+                <use>admin</use>
+            
+                <args>
+                    <module>SemExpert_TranslationDoctor</module>
+                    <frontName>translationdr</frontName>
+                </args>
+        
+            </semexpert_translationdr>
+        </routers>
+    </admin>
+    
+    <adminhtml>
+        <layout>
+            <updates>
+                <translationdr>
+                    <file>translationdr.xml</file>
+                </translationdr>
+            </updates>
+        </layout>
+    </adminhtml>
+    
 </config>
