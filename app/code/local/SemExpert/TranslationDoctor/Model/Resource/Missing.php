@@ -27,7 +27,7 @@ class SemExpert_TranslationDoctor_Model_Resource_Missing extends Mage_Core_Model
         /* @var $translate SemExpert_TranslationDoctor_Model_Mage_Core_Translate */ 
         $translate = Mage::getSingleton('core/translate');
         
-        list($namespace, $string) = explode(Mage_Core_Model_Translate::SCOPE_SEPARATOR, $code);
+        list($namespace, $string) = explode(Mage_Core_Model_Translate::SCOPE_SEPARATOR, $code, 2);
         
         $adapter = $this->_getWriteAdapter();
         
